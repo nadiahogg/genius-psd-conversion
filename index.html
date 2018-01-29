@@ -6,51 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Genius</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <script src='https://use.fontawesome.com/1cb163be6c.js'></script>
+    
 </head>
 <body>
     <header class="header">
         <div class="contact">
             <div class="wrapper">
-                <div class="phone">
-                    <i class="fa fa-phone aria-hidden="true""></i>(541) 754-3010</p>
-                </div>
-                <div class="email"><i class="fa fa-envelope-o aria-hidden="true""></i>(541) 754-3010</p></div>
-                <div class="logo">
-                    <img src="./assets/logo-genius.png" alt="">
-                </div>
-                <div class="register">
-                    <p>Register</p>
-                </div>
-                <div class="login">
-                    <p>Login</p>
-                </div>
+                <ul class="contact-info" role="navigation">
+                    <li class="icon"><i class="fa fa-phone aria-hidden=" true ""></i>(541) 754-3010</li>
+                    <li class="icon"><i class="fa fa-envelope-o aria-hidden=" true ""></i>contact@com.vn</li>
+                    <li class="company-logo"><img src="./assets/logo-genius.png" alt=""></li>
+                    <li>Register</li>
+                    <li>login</li>
+                    <li></li>
+                </ul>
             </div>
         </div>
         <div class="menu">
             <div class="wrapper">
-                <nav class="navigation ">
-                    <ul>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">events</a></li>
-                    </ul>
+                <nav>
+                    <input type="checkbox" id="checkbox1" />
+                    <label for="checkbox1">
+                        <ul class="menu courses">
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">PAGES</a>
+                            </li>
+                            <li>
+                                <a href="#">COURSES</a>
+                            </li>
+                            <li>
+                                <a href="#">FEATURES</a>
+                            </li>
+                            <li>
+                                <a href="#">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="#">NEWS</a>
+                            </li>
+                            <li>
+                                <a href="#">EVENTS</a>
+                            </li>
+                            <li>
+                                <a href="#"><li class="icon">
+                                    <i class="fa fa-shopping-cart aria-hidden=" true ""></i></li></a>
+                            </li>
+                            <li>
+                                <a href="#"><li class="icon">
+                                    <i class="fa fa-search aria-hidden=" true ""></i></li></a>
+                            </li>
+                        </ul>
+                        <span class="toggle">☰</span>
+                    </label>
                 </nav>
-                <div class="cart-search">
-                    <i class="fa fa-shopping-cart aria-hidden=" true ""></i>
-                    <i class="fa fa-search aria-hidden=" true ""></i>
-                </div>
             </div>
         </div>
         <div class="hero">
-            <h1 class="headline">Developing Skills</h1>
+            <h1 class="headline">Developing<br>Skills</h1>
             <p class="header-text">Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Proin finibus risus quis arcu aliquam egestas. Morbi
             molestie elit sed ligula volutpat cursus. Sed mollis porttitor luctus.</p>
-            <button class="btn">Start Learning Today </button>
+            <button id="button-effect" type="button">Start Learning now!</button>
+
         </div>
     </header>
     <main>
@@ -58,14 +78,14 @@
             <div class="wrapper">
                 <div class="section-header">
                     <h3>Touch them if you want</h3>
-                    <h2>Trendning CoUrses</h2>
+                    <h2>Trending CoUrses</h2>
                     <p class="fancy">
                         <span><img src="./assets/icon-book.png" alt=""></span>
                     </p>
                 </div>
-                <nav class="navigation ">
-                    <ul>
-                        <li class="active">
+                <nav>
+                    <ul class="menu">
+                        <li>
                             <a href="#">all</a>
                         </li>
                         <li>
@@ -84,27 +104,232 @@
                             <a href="#">business</a>
                         </li>
                     </ul>
+                       
+                </nav>
+
+            <!-- Course gallery starts here -->
                 <div class="course-gallery">
                     <div class="course-container">
-                        <img src="./assets/courses-01.jpg" alt="reading on a dock">
-                        <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
-                        <a href="#" class="course-instructor">
-                            <img src="./assets/courses-profile-placeholder.png" alt="">
-                            <span>Clive Bradley</span>
-                            <br><span>View Profile</span>
-                        </a>
-                        <a href="#" class="stats">
-                            <i class="fa fa-users aria-hidden=" true "">75</i>
-                        </a>
-                        <a href="#" class="stats">
-                            <i class="fa fa-comments aria-hidden=" true "">24</i>
-                        </a>
-                        <div class="price">Free</div>
+                        <img class="course-image"src="./assets/courses-01.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture"src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">   <span class="name">Clive Bradley</span>
+                                <br><span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div><a href="#" class="stats">
+                                <i class="fa fa-users aria-hidden=" true "">75</i>
+                            </a></div>
+                            <div><a href="#" class="stats">
+                                <i class="fa fa-comments aria-hidden=" true "">24</i>
+                            </a></div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-02.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-03.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-04.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-05.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-06.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-07.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
+                    </div>
+
+                    <div class="course-container">
+                        <img class="course-image" src="./assets/courses-08.jpg" alt="reading on a dock">
+                        <div class="course-info clearfix">
+                            <h4 class="course-name">Course in Expert bartending and modern cocktail</h4>
+                            <a href="#" class="course-instructor">
+                                <img class="profile-picture" src="./assets/courses-profile-placeholder.png" alt="">
+                                <div class="view-instructor">
+                                    <span class="name">Clive Bradley</span>
+                                    <br>
+                                    <span class="profile">View Profile</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-footer">
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                            </div>
+                            <div class="price">Free</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="photo-gallery">
+        <section class="gallery">
             <div class="wrapper">
                 <div class="section-header">
                     <h3>Lorem Ipsum Dolor</h3>
@@ -137,8 +362,14 @@
                 </div>
             </div>    
         </section>
+
+        <!-- Section that contains the latest news -->
         <section class="latest-news">
+
+            <!-- Wrapper -->
             <div class="wrapper">
+
+                <!-- Section header -->
                 <div class="section-header">
                     <h3>Lorem Ipsum Dolor</h3>
                     <h2>See Photo Gallery</h2>
@@ -148,8 +379,13 @@
                         </span>
                     </p>
                 </div>
+
+                <!-- end of section header -->
+
+
                 <article>
                     <div class="article-content">
+                        <img src="./assets/news-01.jpg" alt="">
                         <p class="article-title">Course in digital photography and Photoshop</p>
                         <div class="article-stats">
                             <span class="author">admin</span>
@@ -223,7 +459,7 @@
         </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>

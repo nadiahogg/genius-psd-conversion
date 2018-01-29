@@ -1,0 +1,61 @@
+.course-gallery {
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+}
+
+.course-container {
+    border: 1px solid $border;
+}
+
+.course-info {
+    padding: 10px 20px;
+    border-bottom: 1px solid $border;
+    hyphens: auto;
+    
+}
+.course-image {
+    width: 100%;
+}
+.course-instructor img {
+    float: left;
+}
+.view-instructor {
+    float: left;
+    margin-left: 10px;
+    font-size: .8rem;
+}
+
+.course-footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+}
+
+.price {
+    margin-left: auto;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-gallery img {
+    width: 100%;
+}
+
+
+
+span .name {
+    font-size: .8rem;
+    float: left;
+}
+span .profile {
+    font-size: 1rem;
+    float: left;
+    text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+nav {
+  margin: 50px auto;
+  max-width: 700px;
+  width: 95%;
+}
+
+#checkbox1,
+#checkbox2,
+#checkbox3,
+
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background: #FBFBFB;
+}
+
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  font-weight:900;
+  font-size: .8rem;
+  padding: 10px 15px;
+  transition: background .2s linear;
+  color: $primary;
+}
+
