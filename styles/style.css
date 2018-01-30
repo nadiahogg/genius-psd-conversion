@@ -233,10 +233,7 @@ nav {
   max-width: 700px;
   width: 95%; }
 
-#checkbox1,
-#checkbox2,
-#checkbox3,
-.toggle {
+.collapsible-menu {
   display: none; }
 
 .menu {
@@ -265,10 +262,9 @@ nav {
   font-weight: 700;
   font-size: .8rem;
   padding: 10px 15px;
-  -webkit-transition: background .2s linear;
-  -o-transition: background .2s linear;
-  transition: background .2s linear;
   color: #222222; }
+  .menu li a:hover {
+    color: #6BC540; }
 
 .courses-menu {
   padding: 0;
@@ -301,6 +297,37 @@ nav {
   -o-transition: background .2s linear;
   transition: background .2s linear;
   color: #222222; }
+
+@media (max-width: 768px) {
+  .collapsible-menu {
+    display: block; }
+  .menu {
+    display: none; }
+  .menu-content {
+    max-height: 10px;
+    overflow: hidden;
+    padding: 0 0 0 50px; }
+  .collapsible-menu {
+    background-color: #FBFBFB;
+    padding: 0px 30px; }
+  .collapsible-menu ul {
+    list-style-type: none;
+    padding: 0; }
+  .collapsible-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; }
+  .collapsible-menu label {
+    color: rgba(255, 255, 255, 0);
+    display: block;
+    cursor: pointer;
+    background: url(../assets/menu.png) no-repeat left;
+    padding: 25px 0 0px 0px; }
+  input#collapse {
+    display: none; }
+  /* Toggle Effect */
+  input:checked ~ .menu-content {
+    max-height: 100%; } }
 
 header {
   width: 100%;

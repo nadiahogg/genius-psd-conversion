@@ -11,10 +11,15 @@
     
 </head>
 <body>
+
+    <!-- The header section contains the black contact section & white navigation section -->
+
     <header class="header">
+
+    <!-- Black area with phone, email, logo and login links -->
         <div class="contact">
             <div class="wrapper">
-                <ul class="contact-info" role="navigation">
+                <ul class="contact-info" >
                     <li class="icon"><i class="fa fa-phone aria-hidden=" true ""></i>(541) 754-3010</li>
                     <li class="icon"><i class="fa fa-envelope-o aria-hidden=" true ""></i>contact@com.vn</li>
                     <li class="company-logo"><img src="./assets/logo-genius.png" alt=""></li>
@@ -24,51 +29,68 @@
                 </ul>
             </div>
         </div>
+        <!-- End of black contact area -->
+
+        <!-- White area with main navigation for the site -->
         <div class="menu">
             <div class="wrapper">
                 <nav>
-                    <input type="checkbox" id="checkbox1" />
-                    <label for="checkbox1">
-                        <ul class="menu courses">
-                            <li>
-                                <a href="#">HOME</a>
-                            </li>
-                            <li>
-                                <a href="#">PAGES</a>
-                            </li>
-                            <li>
-                                <a href="#">COURSES</a>
-                            </li>
-                            <li>
-                                <a href="#">FEATURES</a>
-                            </li>
-                            <li>
-                                <a href="#">SHOP</a>
-                            </li>
-                            <li>
-                                <a href="#">NEWS</a>
-                            </li>
-                            <li>
-                                <a href="#">EVENTS</a>
-                            </li>
-                            <li>
-                                <a href="#"><li class="icon">
-                                    <i class="fa fa-shopping-cart aria-hidden=" true ""></i></li></a>
-                            </li>
-                            <li>
-                                <a href="#"><li class="icon">
-                                    <i class="fa fa-search aria-hidden=" true ""></i></li></a>
-                            </li>
-                        </ul>
-                        <span class="toggle">☰</span>
-                    </label>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">PAGES</a>
+                        </li>
+                        <li>
+                            <a href="#">COURSES</a>
+                        </li>
+                        <li>
+                            <a href="#">FEATURES</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="#">EVENTS</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
+            <!-- End of section that contains the main navigation menu -->
+
+            <!-- Collapsible menu that appears when width of browser is less than 768px -->
+            <div class="collapsible-menu">
+                <input type="checkbox" id="collapse">
+                <label for="collapse">menu</label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="#"></a>Home</li>
+                        <li>
+                            <a href="#"></a>Services</li>
+                        <li>
+                            <a href="#"></a>Projects</li>
+                        <li>
+                            <a href="#"></a>About</li>
+                        <li>
+                            <a href="#"></a>Blog</li>
+                        <li>
+                            <a href="#"></a>Contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of collapsible menu -->
+
+        
     </header>
     <section>
         <div class="hero">
-            <h1 class="headline">Developing<br>Skills</h1>
+            <h1 class="headline">helli<br>Skills</h1>
             <p class="header-text">Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Proin finibus risus quis arcu aliquam egestas. Morbi
             molestie elit sed ligula volutpat cursus. Sed mollis porttitor luctus.</p>
             <button id="button-effect" type="button">Start Learning now!</button>
