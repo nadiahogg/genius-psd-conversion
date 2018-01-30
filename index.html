@@ -65,6 +65,8 @@
                 </nav>
             </div>
         </div>
+    </header>
+    <section>
         <div class="hero">
             <h1 class="headline">Developing<br>Skills</h1>
             <p class="header-text">Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Proin finibus risus quis arcu aliquam egestas. Morbi
@@ -72,43 +74,44 @@
             <button id="button-effect" type="button">Start Learning now!</button>
 
         </div>
-    </header>
+    </section>
     <main>
         <section class="trending-courses">
-            <div class="wrapper">
+            
                 <div class="section-header">
                     <h3>Touch them if you want</h3>
                     <h2>Trending CoUrses</h2>
                     <p class="fancy">
                         <span><img src="./assets/icon-book.png" alt=""></span>
                     </p>
+                    <nav>
+                        <ul class="courses-menu">
+                            <li>
+                                <a href="#">all</a>
+                            </li>
+                            <li>
+                                <a href="#">film</a>
+                            </li>
+                            <li>
+                                <a href="#">music</a>
+                            </li>
+                            <li>
+                                <a href="#">photography</a>
+                            </li>
+                            <li>
+                                <a href="#">design</a>
+                            </li>
+                            <li>
+                                <a href="#">business</a>
+                            </li>
+                        </ul>
+                    
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="#">all</a>
-                        </li>
-                        <li>
-                            <a href="#">film</a>
-                        </li>
-                        <li>
-                            <a href="#">music</a>
-                        </li>
-                        <li>
-                            <a href="#">photography</a>
-                        </li>
-                        <li>
-                            <a href="#">design</a>
-                        </li>
-                        <li>
-                            <a href="#">business</a>
-                        </li>
-                    </ul>
-                       
-                </nav>
-
+            
+        
             <!-- Course gallery starts here -->
-                <div class="course-gallery">
+                <div class=" wrapper course-gallery">
                     <div class="course-container">
                         <img class="course-image"src="./assets/courses-01.jpg" alt="reading on a dock">
                         <div class="course-info clearfix">
@@ -121,12 +124,16 @@
                             </a>
                         </div>
                         <div class="course-footer">
-                            <div><a href="#" class="stats">
-                                <i class="fa fa-users aria-hidden=" true "">75</i>
-                            </a></div>
-                            <div><a href="#" class="stats">
-                                <i class="fa fa-comments aria-hidden=" true "">24</i>
-                            </a></div>
+                            <div>
+                                <a href="#" class="stats">
+                                    <ul class="stats" role="navigation">
+                                        <li class="icon">
+                                            <i class="fa fa-users aria-hidden=" true ""></i>25</li>
+                                        <li class="icon">
+                                            <i class="fa fa-comments aria-hidden=" true ""></i>24</li>
+                                    </ul>        
+                                </a>
+                            </div>
                             <div class="price">Free</div>
                         </div>
                     </div>
@@ -384,23 +391,67 @@
 
 
                 <article>
-                    <div class="article-content">
+                    <div class="article-content clearfix">
                         <img src="./assets/news-01.jpg" alt="">
-                        <p class="article-title">Course in digital photography and Photoshop</p>
-                        <div class="article-stats">
-                            <span class="author">admin</span>
-                            <span class="date">Oct. 11, 2017</span>
-                            <a href="#" class="stats">
-                                <i class="fa fa-users aria-hidden=" true "">75</i>
-                            </a>
-                            <a href="#" class="stats">
-                                <i class="fa fa-comments aria-hidden=" true "">24</i>
-                            </a>
-                            <p class="description">Dalmatian hello amazing the rmore flung as
-                            thanks a manta dealt to under emu.Dalmatian hello amazing the rmore flung as thanks a manta dealt to under emu some the and
-                            one baldbe dear sobbingly save and spitefully less Dalmatian hello amazing the rmore flung as thanks a manta dealt to under
-                            emu some the and one baldbe dear sobbingly save and spitefully Dalmatian hello amazing the edugate.</p>
-                            <button class="btn">learn more</button>
+                        <div class="content">
+                            <p class="article-title">Course in digital photography and Photoshop</p>
+                            <div class="article-stats">
+                                <span class="author">admin</span>
+                                <span class="date">Oct. 11, 2017</span>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                                <p class="description">Dalmatian hello amazing the rmore flung as
+                                thanks a manta dealt to under emu.Dalmatian hello amazing the rmore flung as thanks a manta dealt to under emu some the and
+                                one baldbe dear sobbingly save and spitefully less Dalmatian hello amazing the rmore flung as thanks a manta dealt to under
+                                emu some the and one baldbe dear sobbingly save and spitefully Dalmatian hello amazing the edugate.</p>
+                                <button id="button-effect">learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content clearfix">
+                        <img src="./assets/news-02.jpg" alt="">
+                        <div class="content">
+                            <p class="article-title">Course in digital photography and Photoshop</p>
+                            <div class="article-stats">
+                                <span class="author">admin</span>
+                                <span class="date">Oct. 11, 2017</span>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                                <p class="description">Dalmatian hello amazing the rmore flung as thanks a manta dealt to under emu.Dalmatian hello amazing the rmore
+                                    flung as thanks a manta dealt to under emu some the and one baldbe dear sobbingly save and spitefully less
+                                    Dalmatian hello amazing the rmore flung as thanks a manta dealt to under emu some the and one baldbe dear
+                                    sobbingly save and spitefully Dalmatian hello amazing the edugate.</p>
+                                <button id="button-effect">learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content clearfix">
+                        <img src="./assets/news-03.jpg" alt="">
+                        <div class="content">
+                            <p class="article-title">Course in digital photography and Photoshop</p>
+                            <div class="article-stats">
+                                <span class="author">admin</span>
+                                <span class="date">Oct. 11, 2017</span>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-users aria-hidden=" true "">75</i>
+                                </a>
+                                <a href="#" class="stats">
+                                    <i class="fa fa-comments aria-hidden=" true "">24</i>
+                                </a>
+                                <p class="description">Dalmatian hello amazing the rmore flung as thanks a manta dealt to under emu.Dalmatian hello amazing the rmore
+                                    flung as thanks a manta dealt to under emu some the and one baldbe dear sobbingly save and spitefully less
+                                    Dalmatian hello amazing the rmore flung as thanks a manta dealt to under emu some the and one baldbe dear
+                                    sobbingly save and spitefully Dalmatian hello amazing the edugate.</p>
+                                <button id="button-effect">learn more</button>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -419,6 +470,7 @@
                 </div>
                 <div class="circle">
                     <div class="content-block">
+
                         <ul>
                             <li class="bullet">Concept</li>
                             <li class="bullet-none">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum has been . Lorem Ipsum has been</li>
@@ -427,7 +479,76 @@
                 </div>
             </div>
         </section>
-        <section class="pricing">
+        <!-- end of features section -->
+
+        <!-- section with pricing options -->
+        <section>
+            <div class="section-header">
+                <h3>Choose your pricing</h3>
+                <h2>THe best pricing we offer</h2>
+                <p class="fancy">
+                    <span>
+                        <img src="./assets/icon-book.png" alt="">
+                    </span>
+                </p>
+            </div>
+            <div class="wrapper">
+                <div class="price-table-wrapper">
+                    <div class="pricing-table">
+                        <h2 class="pricing-table__price">$0</h2>
+                        <h3 class="pricing-table__header">TRIAL</h3>
+                        <p class="pricing-table__subheader">30 Days Free Trial</p>
+                        <ul class="pricing-table__list">
+                            <li>One Day Trial</li>
+                            <li>Limited Courses</li>
+                            <li>Free 3 Lessons</li>
+                            <li>No Support</li>
+                            <li>No eBook</li>
+                            <li>No Tutorial</li>
+                            <li>Limited Registered User</li>
+                        </ul>
+                        <a target="_blank" class="pricing-table__button" href="http://www.digimadmedia.com">
+                            CHOOSE PLAN
+                        </a>
+                    </div>
+                    <div class="pricing-table">
+                        <h2 class="pricing-table__price">$0</h2>
+                        <h3 class="pricing-table__header">TRIAL</h3>
+                        <p class="pricing-table__subheader">30 Days Free Trial</p>
+                        <ul class="pricing-table__list">
+                            <li>One Day Standard Access</li>
+                            <li>Limited Courses</li>
+                            <li>300+ Lessons</li>
+                            <li>Random Support</li>
+                            <li>View Only eBook</li>
+                            <li>Standard Tutorial</li>
+                            <li>Unlimited Registered User</li>
+                        </ul>
+                        <a target="_blank" class="pricing-table__button" href="http://www.digimadmedia.com">
+                            CHOOSE PLAN
+                        </a>
+                    </div>
+                    <div class="pricing-table">
+                        <h2 class="pricing-table__price">$0</h2>
+                        <h3 class="pricing-table__header">TRIAL</h3>
+                        <p class="pricing-table__subheader">30 Days Free Trial</p>
+                        <ul class="pricing-table__list">
+                            <li>Lifetime Access</li>
+                            <li>Unlimited Courses</li>
+                            <li>3000+ Lessons</li>
+                            <li>Free Support</li>
+                            <li>Free eBook Downloads</li>
+                            <li>Premium Tutorial</li>
+                            <li>Unlimited Registered User</li>
+                        </ul>
+                        <a target="_blank" class="pricing-table__button" href="http://www.digimadmedia.com">
+                            CHOOSE PLAN
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="pricing">
             <div class="wrapper">
                 <div class="section-header">
                     <h3>Choose your pricing</h3>
@@ -438,25 +559,28 @@
                         </span>
                     </p>
                 </div>
-                <div class="pricing-container">
-                    <div class="price">$0</div>
-                    <div class="package">
-                        <p class="package-name">Trial</p>
-                        <p class="duration">30 days free trial</p>
-                        <div class="options">
-                            <p>One Day Trial</p>
-                            <p>Limited Courses</p>
-                            <p>Free 3 Lessons</p>
-                            <p>No Supporter</p>
-                            <p>No eBook</p>
-                            <p>No Tutorial</p>
-                            <p>Limited Registered User</p>
+                <div class="price-container">
+                    <div class="pricing-container">
+                        <div class="package-price">$0</div>
+                            <div class="package">
+                                <p class="package-name">Trial</p>
+                                <p class="duration">30 days free trial</p>
+                                <div class="options">
+                                    <p>One Day Trial</p>
+                                    <p>Limited Courses</p>
+                                    <p>Free 3 Lessons</p>
+                                    <p>No Supporter</p>
+                                    <p>No eBook</p>
+                                    <p>No Tutorial</p>
+                                    <p>Limited Registered User</p>
+                                </div>
+                                <button class="btn">Choose Plan</button>
+                            </div>
                         </div>
-                        <button class="btn">Choose Plan</button>
-                    </div>
+                        
                 </div>
             </div>    
-        </section>
+        </section> -->
     </main>
     <footer>
 

@@ -137,10 +137,10 @@ body {
   font-size: 16px; }
 
 button {
-  padding: 20px; }
+  padding: 20px;
+  clear: both; }
 
 #button-effect {
-  margin: 0 auto;
   font-size: .7rem;
   padding: .6rem 1.5rem;
   display: block;
@@ -164,6 +164,10 @@ button {
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   margin: 50px; }
+
+@media (max-width: 480px) {
+  .course-gallery {
+    grid-template-columns: 1fr; } }
 
 .course-container {
   border: 1px solid #B7B7B7; }
@@ -196,13 +200,21 @@ button {
   height: 50px;
   padding: 20px; }
 
+.stats {
+  font-size: 0.8rem; }
+
 .price {
-  margin-left: auto; }
+  margin-left: auto;
+  font-size: 0.8rem; }
 
 .photo-gallery {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 480px) {
+  .photo-gallery {
+    grid-template-columns: 1fr 1fr; } }
 
 .photo-gallery img {
   width: 100%; }
@@ -217,7 +229,7 @@ span .profile {
   text-transform: uppercase; }
 
 nav {
-  margin: 50px auto;
+  margin: 20px auto;
   max-width: 700px;
   width: 95%; }
 
@@ -250,7 +262,7 @@ nav {
   text-decoration: none;
   -ms-flex-item-align: center;
   align-self: center;
-  font-weight: 900;
+  font-weight: 700;
   font-size: .8rem;
   padding: 10px 15px;
   -webkit-transition: background .2s linear;
@@ -258,11 +270,51 @@ nav {
   transition: background .2s linear;
   color: #222222; }
 
+.courses-menu {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  background: #FBFBFB; }
+
+.courses-menu li a {
+  text-decoration: none;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-weight: 400;
+  font-size: .8rem;
+  padding: 10px 10px;
+  -webkit-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  transition: background .2s linear;
+  color: #222222; }
+
 header {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36); }
+
+.hero {
+  width: 100%;
+  padding: 30vh;
   background-image: url(../assets/background-hero.jpg);
   background-size: cover;
-  height: 100vh;
-  background-position: bottom; }
+  height: 100vh; }
 
 .contact {
   background-color: #222222;
@@ -293,37 +345,102 @@ header {
   text-align: center;
   margin: 20px auto; }
 
-.section-header {
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px; }
-
-.section-header h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1rem; }
-
-.section-header h2 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  line-height: 1rem; }
+.course-footer a i {
+  color: #222222;
+  font-size: .8rem; }
 
 .latest-news {
   margin: 0 auto; }
 
 .article-content {
-  width: 80%;
-  margin: 0 auto;
+  margin: 50px 0;
   border: 1px solid #B7B7B7;
-  position: relative; }
+  background-color: #F1F2F7; }
 
 .article-content img {
-  height: 100%;
-  position: absolute;
+  max-width: 40%;
+  position: relative;
   top: -10px;
   left: 10px; }
+
+.content {
+  width: 55%;
+  float: right;
+  padding: 0 15px;
+  line-height: 1.2rem; }
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+.description {
+  font-size: .8rem; }
+
+.price-table-wrapper {
+  text-align: center;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+  .price-table-wrapper .pricing-table {
+    border: 1px solid #C8C8C8;
+    background: #F1F2F7;
+    margin: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative; }
+    .price-table-wrapper .pricing-table:hover {
+      background: #6BC540; }
+    .price-table-wrapper .pricing-table__price {
+      color: #222222;
+      padding: 15px;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: 5px solid #ffffff;
+      border-radius: 60%;
+      position: absolute;
+      top: -50px;
+      background-color: #F1F2F7;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .price-table-wrapper .pricing-table__header {
+      padding: 30px;
+      font-size: 1.1rem;
+      color: #222222;
+      margin: 40px 0 5px 0;
+      padding: 0px; }
+    .price-table-wrapper .pricing-table__subheader {
+      margin: 0 0 30px 0;
+      padding: 0px;
+      font-size: 0.7rem;
+      color: #222222; }
+    .price-table-wrapper .pricing-table__button {
+      display: block;
+      background: #F1F2F7;
+      text-decoration: none;
+      padding: 20px;
+      color: #222222;
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .price-table-wrapper .pricing-table__list {
+      font-size: 0.8rem;
+      color: #222222;
+      margin: 5px 5px 0 5px;
+      background-color: #fff;
+      padding: 20px; }
+      .price-table-wrapper .pricing-table__list li {
+        padding: 5px; }
+    .price-table-wrapper .pricing-table:hover {
+      -webkit-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
+      box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36); }
+      .price-table-wrapper .pricing-table:hover .pricing-table__price, .price-table-wrapper .pricing-table:hover .pricing-table__button {
+        background-color: #6BC540;
+        color: #fff; }
 
 footer {
   background: hotpink; }
@@ -332,7 +449,7 @@ body {
   background-color: #FBFBFB; }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 900px;
   margin: 0 auto; }
 
 ul {
@@ -347,7 +464,9 @@ h1 {
   font-size: 3rem;
   text-align: center;
   color: #242A42;
-  padding: 20vh 0 0 0; }
+  padding: 40px;
+  font-weight: 900;
+  margin: 0; }
 
 h4 {
   font-size: .9rem;
@@ -356,5 +475,29 @@ h4 {
   padding: 0 0 10px 0;
   margin: 0; }
 
+section {
+  padding: 50px 0; }
+
 main section:nth-child(even) {
   background-color: #F1F2F7; }
+
+i {
+  color: #6BC540;
+  padding: 0 7px 0 0; }
+
+.section-header {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center; }
+
+.section-header h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1rem; }
+
+.section-header h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1rem; }

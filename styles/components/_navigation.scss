@@ -1,8 +1,9 @@
 nav {
-  margin: 50px auto;
+  margin: 20px auto;
   max-width: 700px;
   width: 95%;
 }
+
 
 #checkbox1,
 #checkbox2,
@@ -11,6 +12,8 @@ nav {
 .toggle {
   display: none;
 }
+
+
 
 .menu {
   padding: 0;
@@ -27,10 +30,31 @@ nav {
 .menu li a {
   text-decoration: none;
   align-self: center;
-  font-weight:900;
+  font-weight:700;
   font-size: .8rem;
   padding: 10px 15px;
   transition: background .2s linear;
   color: $primary;
 }
 
+.courses-menu {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  background: #FBFBFB;
+}
+
+.courses-menu li a {
+  text-decoration: none;
+  align-self: center;
+  font-weight:400;
+  font-size: .8rem;
+  padding: 10px 10px;
+  transition: background .2s linear;
+  color: $primary;
+}

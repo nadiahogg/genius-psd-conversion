@@ -5,6 +5,12 @@
     margin: 50px;
 }
 
+@media (max-width: 480px) {
+    .course-gallery {
+    grid-template-columns: 1fr;
+}
+}
+
 .course-container {
     border: 1px solid $border;
 }
@@ -34,8 +40,13 @@
     padding: 20px;
 }
 
+.stats {
+    font-size: 0.8rem;
+}
+
 .price {
     margin-left: auto;
+    font-size: 0.8rem;
 }
 
 .photo-gallery {
@@ -44,6 +55,11 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 480px) {
+    .photo-gallery {
+    grid-template-columns: 1fr 1fr;
+}
+}
 .photo-gallery img {
     width: 100%;
 }
