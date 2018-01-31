@@ -362,9 +362,6 @@ nav {
   .courses-menu li a:hover {
     color: #6BC540; }
 
-.menu {
-  display: none; }
-
 .menu-content {
   max-height: 10px;
   overflow: hidden;
@@ -398,7 +395,9 @@ input:checked ~ .menu-content {
 
 @media (max-width: 768px) {
   .collapsible-menu {
-    display: block; } }
+    display: block; }
+  .menu {
+    display: none; } }
 
 @media (max-width: 514px) {
   .courses-menu {

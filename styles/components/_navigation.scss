@@ -62,9 +62,7 @@ nav {
 
 
 
-  .menu {
-    display: none;
-  }
+ 
 
   .menu-content {
     max-height: 10px;
@@ -109,6 +107,10 @@ nav {
 @media (max-width: 768px) {
   .collapsible-menu {
     display: block;
+  }
+
+   .menu {
+    display: none;
   }
 }
 
