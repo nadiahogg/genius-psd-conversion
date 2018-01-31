@@ -55,12 +55,12 @@ nav {
   padding: 10px 10px;
   transition: background .2s linear;
   color: $primary;
+  &:hover {
+    color: $cta;
+  }
 }
 
-@media (max-width: 768px) {
-  .collapsible-menu {
-    display: block;
-  }
+
 
   .menu {
     display: none;
@@ -101,14 +101,19 @@ nav {
       display: none;
   }
 
-/* Toggle Effect */
-
-  // input:checked ~ label {
-  //     background-image: url(../assets/close.png) no-repeat;
-  // }
 
   input:checked ~ .menu-content {
       max-height: 100%;
   }
 
+@media (max-width: 768px) {
+  .collapsible-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 514px) {
+  .courses-menu {
+    display: none;
+  }
 }

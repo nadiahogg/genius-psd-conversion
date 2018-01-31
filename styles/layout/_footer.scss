@@ -66,13 +66,22 @@ footer ul li a {
 .footer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+
 }
 
 .column {
     width: calc(25% - 10px);
 }
 
+@media (max-width: 766px) {
+    .footer {
+        display:block;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
 

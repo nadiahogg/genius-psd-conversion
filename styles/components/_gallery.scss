@@ -16,15 +16,16 @@ a .profile {
     margin: 50px;
 }
 
-@media (max-width: 480px) {
-    .course-gallery {
-    grid-template-columns: 1fr;
-}
-}
+
 
 .course-container {
     border: 1px solid $border;
+    &:hover{
+      box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
+    }
 }
+
+
 
 .course-info {
     padding: 10px 20px;
@@ -92,15 +93,9 @@ p.comments:before {
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 480px) {
-    .photo-gallery {
-    grid-template-columns: 1fr 1fr;
-}
-}
 .photo-gallery img {
     width: 100%;
 }
-
 
 
 span .name {
@@ -116,3 +111,30 @@ span .profile {
 .contact-info {
     padding: 0px;
 }
+
+@media (max-width: 988px) {
+    .course-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 766px) {
+    .course-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 546px) {
+    .course-gallery {
+    grid-template-columns: 1fr;
+    }
+
+    .photo-gallery {
+    grid-template-columns: 1fr;
+    }
+}
+
+

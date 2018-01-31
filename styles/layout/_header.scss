@@ -57,11 +57,11 @@ p.c-email:before {
     border-right: 1px solid rgb(255, 255, 255);
 }
 
-.company-logo {
-    margin-left: auto;
-    margin-right: auto;
+// .company-logo {
+//     margin-left: auto;
+//     margin-right: auto;
 
-}
+// }
 
 .icon {
     margin: 10px;
@@ -78,13 +78,16 @@ p.c-email:before {
     margin: 0 auto;
     background-image: url(../assets/background-hero.jpg); 
     color: $accent;
-    padding: 150px;
+    padding-top: 150px;
 }
-
 .hero h1{
-  font-size: 3.5rem;
-  margin: auto;
-  padding-top: 130px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    color: #242A42;
+    font-weight: 900;
+    margin: 0;
+    padding-top: 130px;
 }
 
 .hero p{
@@ -93,50 +96,73 @@ p.c-email:before {
  
 }
 
-
-@media (max-width: 768px) {
-
-.contact-info .icon {
-    display:none;
-}
-  .hero{
-    height: 75vw;
-  }
-
-  .hero h1{
-    font-size: 8vw;
-    top: 13vw;
-  }
-  .hero p{
-    font-size: 1.8vw;
-    top: 40vw;
-  }
-.hero .start {
-    position: absolute; 
-    bottom: 10vh;
-    right: -50%;
-    left: -50%;
-}
+@media (max-width: 988px) {
+    .contact-info {
+        visibility:hidden;
+    }
 }
 
-@media (max-width: 480px) {
-  .hero{
-    height: 75vw;
-  }
+@media (max-width: 546px) {
+    .hero{
+        width: 100%;
+        background-size: cover;
+        height: 50vh;
+        background-image: url(../assets/background-hero.jpg); 
+        color: $accent;
+        padding-top: 5vw;
+    }
 
-  .hero h1{
-    font-size: 8vw;
-    top: 13vw;
-  }
-  .hero p{
-    font-size: 3vw;
-    top: 50vw;
-  }
-  .hero .start {
-    position: absolute; 
-    bottom: 10vh;
-    right: -50%;
-    left: -50%;
+    .hero h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .hero p{
+        font-size: .9rem;
+        text-align: left;
+    }
+    .register, .login {
+        display: none;
+    }
+    }
+
+    @media (max-width: 480px) {
+    .hero{
+        width: 100%;
+        background-size: cover;
+        height: 80vh;
+        background-image: url(../assets/background-hero.jpg); 
+        color: $accent;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .hero p{
+        font-size: .7rem;
+        padding-bottom: 50px;
+        width: 80%;
+    }
+    .contact-info {
+        display:none;
+    }
+
+    .contact {
+        height: 10vh;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .top {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
 }
-}
+
+    }
+
+
 

@@ -28,3 +28,14 @@ button {
   color: $secondary;
   border-color: $secondary;
 }
+
+.submit {
+  padding: 5px 10px;
+  background: $cta;
+  border: none;
+  text-align: center;
+}
+
+.submit i {
+  color: $secondary;
+}
