@@ -1,3 +1,14 @@
+a .name {
+    color: $primary;
+    font-size: .8rem;
+}
+
+a .profile {
+    color: $cta;
+    text-transform: uppercase;
+    font-size: .6rem;
+}
+
 .course-gallery {
     display: grid;
     grid-gap:20px;
@@ -33,20 +44,46 @@
     font-size: .8rem;
 }
 
+p.users:before, p.comments:before {
+   font-family: FontAwesome;
+   display: inline-block;
+    vertical-align: middle;
+   color: #656565;
+   font-size: 1rem;
+   padding: 0 5px;
+}
+
+p.users:before {
+   content: "\f0c0";
+}
+
+p.comments:before {
+   content: "\f086";
+}
+
 .course-footer {
     display: flex;
     align-items: center;
     height: 50px;
-    padding: 20px;
+    padding: 5px;
+    color: #656565;
 }
 
 .stats {
     font-size: 0.8rem;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0 5px;
+    font-size: .8rem;
+    margin: 0;
 }
 
 .price {
     margin-left: auto;
     font-size: 0.8rem;
+    color: $cta;
+    padding: 0 5px;
 }
 
 .photo-gallery {
@@ -74,4 +111,8 @@ span .profile {
     font-size: 1rem;
     float: left;
     text-transform: uppercase;
+}
+
+.contact-info {
+    padding: 0px;
 }

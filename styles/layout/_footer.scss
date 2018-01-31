@@ -1,3 +1,78 @@
 footer {
-    background: hotpink;
+    background: $primary;
+    color: $secondary;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    font-weight: 300;
 }
+
+footer ul li a {
+    color: $secondary;
+}
+
+.highlight {
+    color: $cta;
+}
+.column h5 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.logo {
+    margin-top: 20px; 
+}
+
+
+.checkmark a:before, .location a:before, .phone a:before, .email a:before {
+   font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+   color: $cta;
+   font-size: 0.8rem;
+   padding-right: 10px;
+}
+
+
+.chevron a:hover:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+    content: "\f054";
+    color: $cta;
+    font-size: .7rem;
+    padding-right: 10px;
+}
+
+.checkmark a:before {
+   content: "\f00c";
+}
+
+.location a:before {
+   content: "\f041";
+}
+
+.phone a:before {
+   content: "\f098";
+}
+
+.email a:before {
+   content: "\f0e0";
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column {
+    width: calc(25% - 10px);
+}
+
+

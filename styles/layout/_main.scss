@@ -60,18 +60,21 @@
     }
     
     &__price{
+        text-align: center;
       color: $primary;
-      padding: 15px;
-      margin: 0 auto;
+      display:inline;
+      margin: 20px;
+      padding: 20px;
       font-size: 1.5rem;
       font-weight: 700;
       border: 5px solid #ffffff;
-      border-radius: 60%;
-      position: absolute;
-      top: -50px;
+      border-radius: 50%;
+    //   position: absolute;
+    //     left: 50%;
+    //     -webkit-transform: translateX(-50%);
+    //     transform: translateX(-50%)
       background-color: $background;
       transition: all 0.3s ease-in-out;
-    //   transform: translateX(60%);
     }
 
     &__header{
@@ -128,24 +131,55 @@
       }
     }
   }
+.pricing-table .price {
+    width: 100px;
+    height: 1000px;
+}
 
+.fancy:before,
+.fancy:after {
+    background-color: $cta;
+ content: "";
+ display: inline-block;
+ height: 2px;
+ position: relative;
+ vertical-align: text-top;
+ width: 5%;
+}
 
-// .price-container {
-//     position: relative;
-//     display: grid;  
-//     grid-template-columns: repeat(3, 1fr);
-//     background-color: $cta;
+.fancy:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+.fancy:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
 
-// }
+.feature-container {
+    // display: flex;
+    // flex-direction: row;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+}
+.circle {
+    background: #f00;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    // z-index: 2;
+}
 
-// .package-price {
-//     border-radius: 50%;
-//     border: 5px solid #fff;
-//     position: absolute;
-//     margin: 0 auto;
-//     top: -50px;
-//     background-color: $background;
-//     font-size: 2rem;
-//     padding: 10px;
-//     font-weight: 700;
-// }
+.feature-description {
+    padding-left: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-description:before {
+    content: url('../assets/icon-lightBulb.png');
+    display: inline-block;
+}

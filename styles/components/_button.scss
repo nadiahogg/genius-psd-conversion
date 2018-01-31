@@ -1,13 +1,18 @@
 button {
     padding: 20px;
     clear: both;
+
+}
+
+.start {
+  margin: 0 auto;
 }
 
 
 #button-effect {
   // margin: 0 auto;
-  font-size: .7rem;
-  padding: .6rem 1.5rem;
+  font-size: 1rem;
+  padding: .9rem 1.6rem;
   display: block;
   background-color: $cta;
   border: 1px solid transparent;
@@ -19,7 +24,7 @@ button {
 }
 
 #button-effect:hover {
-  background-color: rgba($color: #ffffff, $alpha: 0.0);
-  color: $cta;
-  border-color: $cta;
+  background-color: $accent;
+  color: $secondary;
+  border-color: $secondary;
 }
